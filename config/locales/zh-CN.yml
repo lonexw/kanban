@@ -1,0 +1,167 @@
+zh-CN:
+  # ============================================================================
+  # Fizzy Chinese (Simplified) Translations
+  # ============================================================================
+  #
+  # This file contains Chinese translations for the Fizzy application.
+  # Organized by feature area to make maintenance easier.
+  #
+  # To add a new translation:
+  # 1. Add the key under the appropriate section
+  # 2. Use the same key structure as en.yml
+  # 3. Keep translations natural and context-appropriate
+  #
+  # ============================================================================
+
+  # Locale Labels
+  # ----------------------------------------------------------------------------
+  locales:
+    en: "English"
+    "zh-CN": "中文 (简体)"
+
+  # Common/Shared Translations
+  # ----------------------------------------------------------------------------
+  hello: "你好，世界"
+  common:
+    actions:
+      edit: "编辑"
+      delete: "删除"
+      save: "保存"
+      cancel: "取消"
+      create: "创建"
+      update: "更新"
+      close: "关闭"
+      back: "返回"
+      search: "搜索"
+      filter: "筛选"
+      submit: "提交"
+    
+    labels:
+      name: "名称"
+      description: "描述"
+      created_at: "创建时间"
+      updated_at: "更新时间"
+    
+    messages:
+      confirm_delete: "确定要删除吗？"
+      success: "操作成功"
+      error: "操作失败"
+
+  # Navigation
+  # ----------------------------------------------------------------------------
+  navigation:
+    boards: "看板"
+    cards: "卡片"
+    settings: "设置"
+    profile: "个人资料"
+    logout: "退出登录"
+
+  # Boards
+  # ----------------------------------------------------------------------------
+  boards:
+    index:
+      title: "看板列表"
+      new_board: "新建看板"
+    
+    show:
+      title: "看板详情"
+    
+    new:
+      title: "创建新看板"
+    
+    edit:
+      title: "编辑看板"
+
+  # Cards
+  # ----------------------------------------------------------------------------
+  cards:
+    index:
+      title: "卡片列表"
+      new_card: "新建卡片"
+    
+    show:
+      title: "卡片详情"
+      comments: "评论"
+      attachments: "附件"
+    
+    new:
+      title: "创建新卡片"
+    
+    edit:
+      title: "编辑卡片"
+    
+    states:
+      triage: "待分类"
+      closed: "已关闭"
+      not_now: "暂不处理"
+
+  # Users & Authentication
+  # ----------------------------------------------------------------------------
+  users:
+    roles:
+      owner: "所有者"
+      admin: "管理员"
+      member: "成员"
+      system: "系统"
+  
+  sessions:
+    new:
+      title: "登录"
+      sign_in: "登录"
+    
+    magic_link:
+      sent: "登录链接已发送到您的邮箱"
+      expired: "登录链接已过期"
+
+  # Account & Settings
+  # ----------------------------------------------------------------------------
+  accounts:
+    settings:
+      title: "账户设置"
+      general: "通用设置"
+      members: "成员管理"
+      webhooks: "Webhooks"
+
+  # Time & Dates
+  # ----------------------------------------------------------------------------
+  time:
+    formats:
+      default: "%Y年%m月%d日 %H:%M"
+      short: "%m月%d日 %H:%M"
+      long: "%Y年%m月%d日 %A %H:%M:%S %Z"
+  
+  date:
+    formats:
+      default: "%Y年%m月%d日"
+      short: "%m月%d日"
+      long: "%Y年%m月%d日 %A"
+
+  # Entropy (Auto-postponement)
+  # ----------------------------------------------------------------------------
+  entropy:
+    title: "自动延后"
+    description: "卡片在无活动一段时间后将自动移至「暂不处理」"
+    settings:
+      default_period: "默认延后周期"
+      board_override: "看板自定义周期"
+
+  # Notifications
+  # ----------------------------------------------------------------------------
+  notifications:
+    title: "通知"
+    mark_as_read: "标记为已读"
+    settings: "通知设置"
+
+  # Search
+  # ----------------------------------------------------------------------------
+  search:
+    title: "搜索"
+    no_results: "未找到结果"
+    placeholder: "搜索卡片、看板..."
+
+  # Errors
+  # ----------------------------------------------------------------------------
+  errors:
+    not_found: "未找到页面"
+    unauthorized: "无权访问"
+    server_error: "服务器错误"
