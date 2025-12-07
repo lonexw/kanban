@@ -5,7 +5,7 @@ module BoardsHelper
 
   def link_to_edit_board(board)
     link_to edit_board_path(board), class: "btn", data: { controller: "tooltip" } do
-      icon_tag("settings") + tag.span("Settings for #{board.name}", class: "for-screen-reader")
+      icon_tag("settings") + tag.span("#{I18n.t('board.settings_for')} #{board.name}", class: "for-screen-reader")
     end
   end
 end

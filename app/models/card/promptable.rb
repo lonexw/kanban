@@ -34,14 +34,14 @@ module Card::Promptable
     def column_prompt_label
       if open?
         if postponed?
-          "Not now"
+          I18n.t("column.not_now_name")
         elsif triaged?
           "#{column&.name}"
         else
-          "Maybe?"
+          I18n.t("column.maybe_name")
         end
       else
-        "Closed (by #{closed_by&.name} at #{closed_at})"
+        "#{I18n.t("column.closed")} (by #{closed_by&.name} at #{closed_at})"
       end
     end
 end

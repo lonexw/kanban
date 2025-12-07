@@ -18,6 +18,14 @@ module CardsHelper
       &block
   end
 
+  def button_to_delete_card(card)
+    button_to card_path(card),
+        method: :delete, class: "btn txt-negative borderless txt-small", data: { turbo_frame: "_top", turbo_confirm: I18n.t('card.confirm_delete') } do
+      concat(icon_tag("trash"))
+      concat(tag.span(I18n.t('card.delete')))
+    end
+  end
+
   def card_title_tag(card)
     title = [
       card.title,
@@ -29,7 +37,7 @@ module CardsHelper
   end
 
   def card_drafted_or_added(card)
-    card.drafted? ? "Drafted" : "Added"
+    card.drafted? ? I18n.t('card.drafted') : I18n.t('card.added')
   end
 
   def card_social_tags(card)

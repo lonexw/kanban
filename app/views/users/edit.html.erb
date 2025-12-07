@@ -51,7 +51,7 @@
       <% end %>
 
       <button type="submit" id="log_in" class="btn btn--reversed center" data-form-target="submit">
-        <span>Save changes</span>
+        <%= t('common.actions.save') %>
       </button>
 
       <%= link_to "Cancel and go back", user_path(@user), data: { form_target: "cancel", turbo_frame: "_top" }, hidden: true %>

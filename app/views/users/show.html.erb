@@ -7,7 +7,7 @@
       <% if Current.user == @user %>
         <%= link_to edit_user_path(@user), class: "user-edit-link btn", data: { controller: "tooltip" } do %>
           <%= icon_tag "pencil" %>
-          <span class="for-screen-reader">Edit profile</span>
+          <span class="for-screen-reader"><%= t("user.profile_edit") %></span>
         <% end %>
       <% end %>
 
@@ -31,7 +31,7 @@
 
       <% if @user.verified? %>
         <div class="flex-inline center justify-center flex-wrap gap">
-          <%= link_to "Which cards are assigned to #{me_or_you}?",
+          <%= link_to t("user.cards_assigned", me_or_you: me_or_you),
                 cards_path(assignee_ids: [ @user.id ], sorted_by: "newest"), class: "btn", data: { turbo_frame: "_top" } %>
           <%= link_to "Which cards were added by #{me_or_you}?",
                 cards_path(creator_ids: [ @user.id ], sorted_by: "newest"), class: "btn", data: { turbo_frame: "_top" } %>
@@ -46,7 +46,7 @@
 
       <div class="center margin-block-start-double">
         <%= button_to session_url(script_name: nil), method: :delete, class: "btn btn--plain txt-link txt-small", data: { turbo: false } do %>
-        <span>Sign out</span>
+        <span><%= t("user.sign_out") %></span>
       <% end %>
       </div>
     </section>

@@ -15,10 +15,10 @@
   </template>
 
   <%= filter_dialog "Tagged…" do %>
-    <strong class="popup__title">Tagged…</strong>
+    <strong class="popup__title"><%= t('card.tagged') %></strong>
 
     <% if user_filtering.tags.many? %>
-      <%= text_field_tag nil, nil, id: nil, placeholder: "Filter…", class: "input input--transparent txt-small", autofocus: true,
+      <%= text_field_tag nil, nil, id: nil, placeholder: t('common.actions.filter'), class: "input input--transparent txt-small", autofocus: true,
             type: "search", autocorrect: "off", autocomplete: "off", data: { "1p-ignore": "true", filter_target: "input", action: "input->filter#filter" } %>
     <% end %>
 

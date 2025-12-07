@@ -15,13 +15,49 @@ zh-CN:
 
   # Locale Labels
   # ----------------------------------------------------------------------------
+  hello: "你好，世界"
   locales:
     en: "English"
     "zh-CN": "中文 (简体)"
+  app:
+    name: "Kanban"
+    welcome: "开启 Kanban 之旅"
+  account:
+    signup: "创建账户"
+    signup_tips: "输入你的邮箱账户以创建账户。"
+    signup_completion: "设置用户名"
+    signup_completion_tips: "就差一步! 请输入代表你的用户名以获取账户。"
+    signup_finish: "继续"
+    join: "Kanban 邀请你加入！"
+    join_completion: "不错! 接下来输入用户名"
+    join_finish: "继续"
+    check_email: "检查你的邮箱"
+    enter_verification_code: "然后输入邮件中包含的 6 位验证码："
+    code_valid_time: "你收到的验证码有效期为 %{time}"
+    session_title: "已创建的 Kanban 账户"
+    no_accounts: "你还没有任何 Kanban 账户。"
+    new_account: "新增一个 Kanban 账户"
+    login: "开始使用"
+    enter_email: "输入你的邮箱"
+    enter_fullname: "请输入代表你的用户名"
+    already_have_account: "已有账户？输入你的邮箱即可登录。"
+    settings: "账户设置"
+    settings_restriction: "只有管理员可以更改这些设置"
+    account_name: "账户名称"
+    invite: "邀请加入"
+    peoples: "此账户中的人员"
+  user:
+    profile: "我的资料"
+    profile_edit: "编辑资料"
+    sign_out: "退出登录"
+    cards_assigned: "哪些卡片是分配给 %{me_or_you}？"
+    cards_added: "哪些卡片由 %{me_or_you} 创建？"
+    transfer_link: "用于在其他设备上自动登录的链接"
+    display_auto_login_qr_code: "显示自动登录二维码"
+    copy_link: "复制自动登录链接"
 
   # Common/Shared Translations
   # ----------------------------------------------------------------------------
-  hello: "你好，世界"
   common:
     actions:
       edit: "编辑"
@@ -50,50 +86,134 @@ zh-CN:
   # Navigation
   # ----------------------------------------------------------------------------
   navigation:
-    boards: "看板"
-    cards: "卡片"
+    home: "首页"
+    search: "搜索"
+    notifications: "通知"
+  search:
+    title: "搜索「Kanban」"
+    placeholder: "卡片内容..."
+  menu:
+    jump_tips: "输入以跳转到看板、人员或标签…"
+    home: "首页"
+    assigned_to_me: "分配给我"
+    added_by_me: "我新建的"
     settings: "设置"
-    profile: "个人资料"
-    logout: "退出登录"
+    title: "账户设置"
+    profile: "我的资料"
+    all_notifications: "所有通知"
+    notification_settings: "通知设置"
+    sign_out: "退出登录"
 
+  # Activity
+  # ----------------------------------------------------------------------------
+  activity:
+    activity: "动态"
+    in: "-"
+    across: "-"
+    by: "以及"
+    latest: "最新动态"
+    no_activity: "无动态"
+    no_more_activity: "无更多动态"
+  
   # Boards
   # ----------------------------------------------------------------------------
-  boards:
-    index:
-      title: "看板列表"
-      new_board: "新建看板"
-    
-    show:
-      title: "看板详情"
-    
-    new:
-      title: "创建新看板"
-    
-    edit:
-      title: "编辑看板"
+  board:
+    board: "看板"
+    board_filter: "名称…"
+    no_selection_label: "所有看板"
+    add: "新建「看板」"
+    add_placeholder: "看板名称…"
+    add_cancel_tips: "取消并返回"
+    validation_message: "看板名称不能为空"
+    finish: "完成创建"
+    settings_title: "「看板」设置"
+    settings_restriction: "只有管理员可以更改这些设置"
+    settings_for: "设置 for "
+    access_tips: "谁可以访问此看板？"
+    everyone: "所有人"
+    give_everyone_access: "允许所有人访问此看板"
+    filter_cards: "筛选任务卡片… [F]"
+  column:
+    maybe: "下一步？"
+    no_cards: "这里没有任务卡片。"
+    drag_cards_here: "将卡片拖到这里"
+    done: "已完成"
+    not_now: "待定"
+    not_now_name: "待定"
+    done_name: "已完成"
+    maybe_name: "下一步？"
+    closed: "已关闭"
+    expand_column: "展开"
+    maximize_column: "最大化"
+    choose_column_for_card: "为此卡片选择列"
+    watching_for_new_cards: "任务卡片新增订阅中"
+    no_one_watching_for_new_cards: "无人订阅任务卡片新增通知"
+    add: "新增列"
+    name_it: "为此列命名"
+    edit: "编辑列"
+    move_to_the_left: "移动到左边"
+    move_to_the_right: "移动到右边"
+    delete: "删除列"
+    options: "列选项"
 
-  # Cards
+  # People
   # ----------------------------------------------------------------------------
-  cards:
-    index:
-      title: "卡片列表"
-      new_card: "新建卡片"
-    
-    show:
-      title: "卡片详情"
-      comments: "评论"
-      attachments: "附件"
-    
-    new:
-      title: "创建新卡片"
-    
-    edit:
-      title: "编辑卡片"
-    
-    states:
-      triage: "待分类"
-      closed: "已关闭"
-      not_now: "暂不处理"
+  people:
+    people: "人员"
+    person: "人员"
+    people_filter: "用户名…"
+    no_selection_label: "所有人"
+    add: "邀请人员"
+  
+  # Card
+  # ----------------------------------------------------------------------------
+  card:
+    add: "任务卡片"
+    added: "新增"
+    updated: "更新"
+    done: "完成"
+    pinned: "已置顶"
+    today_added: "今日新增"
+    today_done: "今日完成"
+    title_placeholder: "任务卡名称…"
+    description_placeholder: "添加一些备注、上下文、图片或视频…"
+    step_placeholder: "添加行动步骤…"
+    create: "完成创建"
+    create_and_add_another: "完成创建并继续"
+    confirm_delete: "确定要永久删除此卡片吗？"
+    drafted: "起草于"
+    assigned_to: "分配给"
+    not_assigned: "未分配"
+    updated_at: "更新于"
+    delete: "删除此卡片"
+    assign_this_to: "分配给…"
+    closed_by: "关闭者"
+    tagged: "标记者"
+    added_by: "创建者"
+    filter:
+      assigned_to: "执行者"
+      board: "看板"
+      closed_by: "关闭者"
+      tagged: "已标记"
+      added_by: "创建者"
+      status: "状态"
+      all_statuses: "全部状态"
+      clear_all: "全部清除"
+      sort_by: "排序"
+      sort_by_latest: "最新"
+      collapse: "收起"
+      expand: "展开"
+      close: "关闭"
+  
+   # Notifications
+  # ----------------------------------------------------------------------------
+  notifications:
+    mark_as_read: "标记为已读"
+    settings: "通知设置"
+    notifications: "通知"
+    clear_all: "全部已读"
+    see_more_new_items: "查看更多"
+    see_older_items: "查看历史"
 
   # Users & Authentication
   # ----------------------------------------------------------------------------
@@ -110,7 +230,7 @@ zh-CN:
       sign_in: "登录"
     
     magic_link:
-      sent: "登录链接已发送到您的邮箱"
+      sent: "登录链接已发送到你的邮箱"
       expired: "登录链接已过期"
 
   # Account & Settings
@@ -144,20 +264,6 @@ zh-CN:
     settings:
       default_period: "默认延后周期"
       board_override: "看板自定义周期"
-
-  # Notifications
-  # ----------------------------------------------------------------------------
-  notifications:
-    title: "通知"
-    mark_as_read: "标记为已读"
-    settings: "通知设置"
-
-  # Search
-  # ----------------------------------------------------------------------------
-  search:
-    title: "搜索"
-    no_results: "未找到结果"
-    placeholder: "搜索卡片、看板..."
 
   # Errors
   # ----------------------------------------------------------------------------

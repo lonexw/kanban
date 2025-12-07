@@ -2,7 +2,7 @@
   <% if board = user_filtering.single_board_or_first %>
     <%= button_to board_cards_path(board), method: :post, class: "btn btn--link btn--circle-mobile", data: { controller: "hotkey", action: "keydown.c@document->hotkey#click" } do %>
       <%= icon_tag "add" %>
-      <span class="overflow-ellipsis">Add a card</span>
+      <span class="overflow-ellipsis"><%= t("card.add") %></span>
       <kbd class="hide-on-touch">C</kbd>
     <% end %>
   <% end %>

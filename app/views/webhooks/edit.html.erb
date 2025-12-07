@@ -21,7 +21,7 @@
     </div>
 
     <%= form.button type: :submit, class: "btn btn--link center txt-medium" do %>
-      <span>Save Changes</span>
+      <%= t('common.actions.save') %>
     <% end %>
 
     <%= link_to "Go back", board_webhooks_path, data: { form_target: "cancel" }, hidden: true %>

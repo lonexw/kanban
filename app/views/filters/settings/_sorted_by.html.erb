@@ -5,7 +5,7 @@
         controller: "dialog filter combobox",
         action: "keydown.esc->dialog#close click@document->dialog#closeOnClickOutside dialog:close@document->filter#clearInput",
         filter_show: user_filtering.show_sorted_by?,
-        combobox_default_value_value: "latest",
+        combobox_default_value_value: t('card.filter.sort_by_latest'),
         combobox_with_default_class: "quick-filter--with-default" } do %>
     <button type="button" class="btn input input--select flex-inline txt-x-small" data-action="click->dialog#toggle:stop">
       <span class="overflow-ellipsis" data-combobox-target="label">
@@ -17,7 +17,7 @@
     </template>
 
     <%= filter_dialog "Sort by…" do %>
-      <strong class="popup__title">Sort by…</strong>
+      <strong class="popup__title"><%= t('card.filter.sort_by') %></strong>
 
       <ul class="popup__list" data-filter-target="list" role="listbox">
         <% Filter::SORTED_BY.each do |sort| %>

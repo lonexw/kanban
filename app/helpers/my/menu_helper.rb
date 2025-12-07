@@ -3,7 +3,7 @@ module My::MenuHelper
     text_field_tag :search, nil,
       type: "search",
       role: "combobox",
-      placeholder: "Type to jump to a board, person, place, or tag…",
+      placeholder: I18n.t('menu.jump_tips'),
       class: "input input--transparent txt-small",
       autofocus: true,
       autocorrect: "off",

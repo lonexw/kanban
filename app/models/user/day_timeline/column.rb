@@ -13,7 +13,7 @@ class User::DayTimeline::Column
 
   def title
     date_tag = local_datetime_tag(day_timeline.day, style: :agoorweekday)
-    parts = [ base_title, date_tag ]
+    parts = [ date_tag, base_title ]
     parts << tag.span("(#{full_events_count})", class: "font-weight-normal") if full_events_count > 0
     safe_join(parts, " ")
   end

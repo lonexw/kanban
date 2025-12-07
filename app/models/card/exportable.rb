@@ -73,13 +73,13 @@ module Card::Exportable
     def export_status
       case
       when closed?
-        "Done"
+        I18n.t("column.done_name")
       when postponed?
-        "Not now"
+        I18n.t("column.not_now_name")
       when column.present?
         column.name
       else
-        "Maybe?"
+        I18n.t("column.maybe_name")
       end
     end
 end

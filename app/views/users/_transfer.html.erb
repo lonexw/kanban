@@ -3,7 +3,7 @@
 
   <label class="flex flex-column gap full-width">
     <div class="flex align-center gap justify-center">
-      <strong id="session_transfer_label" class="txt-medium">Link to automatically log in on another device</strong>
+      <strong id="session_transfer_label" class="txt-medium"><%= t("user.transfer_link") %></strong>
     </div>
     <span class="flex align-center gap margin-inline">
       <input type="text" class="input fill-white" id="session_transfer_url" value="<%= url %>" aria-labelledby="session_transfer_label" readonly>
@@ -14,7 +14,7 @@
     <div data-controller="dialog" data-dialog-modal-value="true" class="flex-inline">
       <%= tag.button class: "btn", data: { action: "dialog#open", controller: "tooltip" } do %>
         <%= icon_tag "qr-code" %>
-        <span class="for-screen-reader">Display auto-login QR code</span>
+        <span class="for-screen-reader"><%= t("user.display_auto_login_qr_code") %></span>
       <% end %>
 
       <dialog class="dialog panel shadow" data-dialog-target="dialog">
@@ -23,7 +23,7 @@
         <form method="dialog" class="margin-block-start flex justify-center">
           <button class="btn" data-controller="tooltip">
             <%= icon_tag "remove" %>
-            <span class="for-screen-reader">Close dialog</span>
+            <span class="for-screen-reader"><%= t("common.actions.close") %></span>
           </button>
         </form>
       </dialog>
@@ -31,7 +31,7 @@
 
     <%= button_to_copy_to_clipboard(url) do %>
       <%= icon_tag "copy-paste" %>
-      <span class="for-screen-reader">Copy auto-login link</span>
+      <span class="for-screen-reader"><%= t("user.copy_link") %></span>
     <% end %>
   </div>
 </div>
