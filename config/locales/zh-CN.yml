@@ -23,6 +23,7 @@ zh-CN:
     name: "Kanban"
     welcome: "开启 Kanban 之旅"
   account:
+    account_list: "账户列表"
     signup: "创建账户"
     signup_tips: "输入你的邮箱账户以创建账户。"
     signup_completion: "设置用户名"
@@ -46,6 +47,7 @@ zh-CN:
     account_name: "账户名称"
     invite: "邀请加入"
     peoples: "此账户中的人员"
+    session_title: "选择「看板」账户"
   user:
     profile: "我的资料"
     profile_edit: "编辑资料"
@@ -102,6 +104,7 @@ zh-CN:
     profile: "我的资料"
     all_notifications: "所有通知"
     notification_settings: "通知设置"
+    tags: "标签"
     sign_out: "退出登录"
 
   # Activity
@@ -188,8 +191,9 @@ zh-CN:
     delete: "删除此卡片"
     assign_this_to: "分配给…"
     closed_by: "关闭者"
-    tagged: "标记者"
+    tagged: "标签"
     added_by: "创建者"
+    no_cards_match_this_filter: "没有卡片符合此筛选条件"
     filter:
       assigned_to: "执行者"
       board: "看板"

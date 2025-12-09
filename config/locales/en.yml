@@ -60,6 +60,7 @@ en:
       success: "操作成功"
       error: "操作失败"
   account:
+    account_list: "Accounts"
     signup: "Sign up"
     signup_tips: "Enter your email to create an account."
     signup_completion: "Complete your sign-up"
@@ -83,6 +84,7 @@ en:
     account_name: "Account name"
     invite: "Invite people"
     peoples: "People on this account"
+    session_title: "Choose an account"
   user:
     profile: "My Profile"
     profile_edit: "Edit Profile"
@@ -110,6 +112,7 @@ en:
     profile: "My Profile"
     all_notifications: "All notifications"
     notification_settings: "Notification Settings"
+    tags: "Tags"
     sign_out: "Sign out"
   activity:
     activity: "Activity"
@@ -190,6 +193,7 @@ en:
     not_assigned: "Not assigned"
     updated_at: "Updated"
     delete: "Delete this card"
+    no_cards_match_this_filter: "No cards match this filter"
     filter:
       assigned_to: "Assigned to…"
       board: "Board..."
